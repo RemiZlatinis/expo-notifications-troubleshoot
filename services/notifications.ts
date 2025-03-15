@@ -52,6 +52,7 @@ export async function getPushNotificationToken() {
     console.log(token);
   } catch (e) {
     token = `${e}`;
+    console.error(e);
   }
 
   return token;
